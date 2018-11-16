@@ -1,0 +1,19 @@
+#navbar {
+  background: url(../img/pattern.png);
+}
+
+.btn-large {
+  border-radius: 24px;
+}
+
+.section-about img {
+  margin-top: 20px;
+}
+
+footer {
+  background: url(../img/pattern.png);
+}
+
+.btn {
+  border-radius: 24px;
+}
