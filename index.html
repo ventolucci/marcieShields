@@ -1,434 +1,545 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <!-- Import Google Icon Font -->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!-- Import materialize.css -->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
-      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
-      crossorigin="anonymous"
-    />
-    <link type="text/css" rel="stylesheet" href="css/main.css" />
-
-    <!-- Let browser know website is optimized for mobile -->
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Marcie Shields</title>
+    <!-- main css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- font awesome -->
+    <script src="js/all.js"></script>
+    <!-- magnific -->
+    <link rel="stylesheet" href="plugins/magnific/magnific-popup.css" />
+    <!-- owl carousel css-->
+    <link rel="stylesheet" href="plugins/owl/owl.carousel.min.css" />
+    <!--owl carousel theme  -->
+    <link rel="stylesheet" href="plugins/owl/owl.theme.default.css" />
   </head>
+  <body>
+    <!-- preloader -->
+    <!-- <div class="preloader">
+      <img src="img/preloader.gif" alt="" class="preloader_img" />
+    </div> -->
+    <!-- end of preloader -->
 
-  <body id="home" class="scrollspy">
-    <!-- Navbar -->
-    <div class="navbar-fixed">
-    <nav class="transparent" id="navbar">
-      <div class="container">
-        <div class="nav-wrapper">
-          <a href="#home" class="brand-logo">Marcie <span class="hide-on-med-and-down">Shields</span></a>
-          <a
-            href="#"
-            class="button-collapse right"
-            data-activates="side-nav"
-          >
-            <i class="material-icons">menu</i>
-          </a>
-          <ul class="right hide-on-med-and-down">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact-modal" class="btn waves-effect waves-light red modal-trigger">Contact Me</a></li>
-          </li>
-          <li>
-            <a href="https://facebook.com">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://twitter.com">
-              <i class="fab fa-twitter"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://instagram.com">
-              <i class="fab fa-instagram"></i>
-            </a>
-          </li>
-          </ul>
-        </nav>
-        </div>
-          <!-- Side nav -->
-          <ul id="side-nav" class="side-nav">
-            <li>
-              <div class="user-view">
-                <div class="background"><img src="img/pattern.png" alt="" /></div>
-                <a href="#">
-                  <img src="img/marcie.jpg" alt="" class="circle" />
-                </a>
-                <a href="#"> <span class="name white-text">Marcie Shields</span> </a>
-                <a href="#">
-                  <span class="email white-text">marcie-shields@gmail.com</span>
-                </a>
-              </div>
-            </li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#contact-modal" class="btn waves-effect waves-light red modal-trigger">Contact Me</a></li>
-            <li><div class="divider"></div></li>
-            <ul class="left-align">
-                <li>
-                    <a href="https://facebook.com">
-                      <i class="fab fa-facebook"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://twitter.com">
-                      <i class="fab fa-twitter"></i>
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://instagram.com">
-                      <i class="fab fa-instagram"></i>
-                    </a>
-                  </li>
-            </ul>               
-          </ul>
-        </div>
+    <!-- nav button -->
+    <span class="nav-btn" id="nav-btn">
+      <i class="fas fa-bars"></i>
+    </span>
+    <!-- navbar -->
+    <nav class="navbar" id="navbar">
+      <div class="navbar-header">
+        <span class="nav-close" id="nav-close">
+          <i class="fas fa-times"></i>
+        </span>
       </div>
-    
-
-    <!-- Section: Slider -->
-    <section class="slider">
-      <ul class="slides">
-        <li>
-          <img src="img/workout.jpg" alt="">
-          <div class="caption center-align">
-            <h2>Lets Workout</h2>
-            <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse odio cumque quo. Possimus, totam dolores et quidem impedit incidunt.</h5>
-            <br><br>
-            <a href="#" class="btn btn-large grey darken-3">Contact Me</a>
-          </div>
-        </li>
-        <li>
-            <img src="img/workout2.jpg" alt="">
-            <div class="caption left-align">
-              <h2>Lets Workout</h2>
-              <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse odio cumque quo. Possimus, totam dolores et quidem impedit incidunt.</h5>
-              <br><br>
-              <a href="#" class="btn btn-large grey darken-3">Contact Me</a>
-            </div>
-          </li>
-          <li>
-              <img src="img/workout3.jpg" alt="">
-              <div class="caption right-align">
-                <h2>Lets Workout</h2>
-                <h5 class="light grey-text text-lighten-3 hide-on-small-only">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione esse odio cumque quo. Possimus, totam dolores et quidem impedit incidunt.</h5>
-                <br><br>
-                <a href="#" class="btn grey darken-3 btn-large">Contact Me</a>
-              </div>
-            </li>
+      <ul class="nav-items">
+        <li><a href="#home" class="nav-link">home</a></li>
+        <li><a href="#about" class="nav-link">about</a></li>
+        <li><a href="#services" class="nav-link">services</a></li>
+        <li><a href="#contact" class="nav-link">contact</a></li>
       </ul>
+    </nav>
+
+    <!-- header -->
+    <header class="header" id="home">
+      <div class="banner">
+        <h1 class="banner-title">marcie shields</h1>
+        <h3 class="banner-subtitle">Let's reach your goals together</h3>
+        <br />
+        <div class="social-icons">
+          <!-- social icon -->
+          <a
+            href="https://m.facebook.com/Marcie-Shields-633999563614691/?ref=bookmarks"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-facebook social-icon-facebook fa-2x"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a
+            href="https://mobile.twitter.com/MarcieShields"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-twitter social-icon-twitter fa-2x"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a
+            href="https://www.instagram.com/shieldsmarcie/"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-instagram social-icon-instragram fa-2x"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+      </div>
+    </header>
+    <!-- end header -->
+
+    <!-- content divider -->
+    <!-- <div class="content-divider"></div> -->
+    <!-- end content divider  -->
+
+    <!-- about  -->
+    <section class="about" id="about">
+      <div class="section-center clearfix">
+        <!-- first column -->
+        <article class="about-img">
+          <div class="about-picture-container">
+            <img
+              src="./img/IMG_1172.jpeg"
+              alt="tea kettle"
+              class="about-picture"
+            />
+          </div>
+        </article>
+        <!-- second column -->
+        <article class="about-info" id="about">
+          <!-- section title -->
+          <div>
+            <h3 class="section-subtitle">about me</h3>
+            <h2 class="section-title">marcie shields</h2>
+          </div>
+          <!--end section title -->
+          <p class="about-text">
+            About ten years ago I started my yoga studies at an ashram in India.
+            There I discovered the capabilities of our body physically and
+            energetically and something in me ignited. Growing up dancing and
+            traveling in the ballet gave me a perspective and appreciation on
+            art and athleticism at a young age. I am now a mother of two and
+            have gone through many changes, setbacks and transformations with my
+            own health. Currently an athlete of bodybuilding in my 40’s I am a
+            strong believer that personal power never depletes. I am
+            enthusiastic about helping other people get in touch with their own
+            personal power and transformative energy. I aspire to work with all
+            people, from children to seniors, men and women. I have no niche
+            group or one size fits all programming. I see everyone as an
+            individual and work with people from the inside out. I believe the
+            way you look is only the byproduct of the work you put in, but it’s
+            such a reward when you’ve found your way on your path!
+          </p>
+
+          <a href="#contact" class="main-btn">contact me</a>
+        </article>
+      </div>
+    </section>
+    <!--  end of about  -->
+    <!-- project -->
+    <!-- <section class="projects section-padding" id="projects">
+     
+    </section> -->
+    <!-- end of project -->
+
+    <!-- products -->
+    <section class="products" id="services">
+      <div class="section-center clearfix">
+        <!-- product info -->
+        <article class="products-info">
+          <!-- section title -->
+          <div>
+            <h3 class="section-subtitle">check out</h3>
+            <h4 class="section-title text-white">
+              Customized Personal Training Packages
+            </h4>
+          </div>
+          <!--end section title -->
+          <p class="product-text">
+            New to online training? This is how it works for you ... Marcie’s
+            online personal training offers you the benefit of having your own
+            Personal Trainer in communication with you and tracking your
+            progress. You will receive a customized workout program, meal plan
+            and monthly periodic meetings, assuring you are on your way to
+            establishing real results.
+          </p>
+        </article>
+      </div>
+    </section>
+    <!-- end products -->
+
+    <!-- blog -->
+    <section class="blogs section-padding" id="blogs">
+      <!-- section title -->
+      <div class="section-title__container">
+        <!-- icon -->
+        <div class="section-title__icon"></div>
+        <!-- end of icon -->
+        <!-- title text -->
+        <div class="section-title__text">
+          <h1 class="section-title__name">our plans</h1>
+        </div>
+        <!-- end of title text -->
+      </div>
+      <!-- end of section title -->
+      <div class="flexbox-parent">
+        <!-- blog -->
+        <article class="blog item-margin flexbox-parent--medium">
+          <!-- blog photo -->
+
+          <div class="blog__photo">
+            <img
+              src="../img/YouCan1.png"
+              alt="project"
+              class="blog__photo-img"
+            />
+          </div>
+
+          <!-- end of blog photo -->
+          <!-- blog info -->
+          <div class="blog__info">
+            <h1 class="blog__info-title section-subtitle">
+              What is Online Training?
+            </h1>
+            <div class="blog__info-underline"></div>
+            <!-- <p class="blog__info-text"></p> -->
+            <ul class="blog__info-text">
+              <li>phone consultation and gathering initial personal details</li>
+              <li>
+                Defining and planning the workout and or diet regime for your
+                goals
+              </li>
+              <li>
+                Working the program and making periodic contact to reassess
+                progress
+              </li>
+              <li>
+                $200 one time assessment with Workout and nutritional
+                programming.
+              </li>
+            </ul>
+          </div>
+          <!-- end of blog info -->
+        </article>
+        <!-- end of blog -->
+        <!-- blog -->
+        <article class="blog blog--reverse item-margin flexbox-parent--medium">
+          <!-- blog photo -->
+
+          <div class="blog__photo">
+            <img
+              src="../img/Marcie-son.png"
+              alt="project"
+              class="blog__photo-img"
+            />
+          </div>
+          <!-- end of blog photo -->
+
+          <!-- blog info -->
+          <div class="blog__info">
+            <h1 class="blog__info-title section-subtitle">
+              Specialized Training
+            </h1>
+            <div class="blog__info-underline"></div>
+            <ul class="blog__info-text">
+              <li>
+                Strength and Conditioning Training
+              </li>
+              <li>
+                Sivananda Yoga and Reiki Master
+              </li>
+              <li>Senior fitness</li>
+              <li>Youth fitness</li>
+              <li>Sports nutrition and weight loss/ weight gain planning</li>
+              <li>Cardio fitness</li>
+              <li>Group classes</li>
+              <li>offering posing, walking and stage presence sessions</li>
+            </ul>
+          </div>
+          <!-- end of blog info -->
+        </article>
+        <!-- end of blog -->
+        <!-- blog -->
+        <article class="blog item-margin flexbox-parent--medium">
+          <!-- blog photo -->
+          <!-- blog photo -->
+
+          <div class="blog__photo">
+            <img
+              src="../img/CustomDiet01.png"
+              alt="project"
+              class="blog__photo-img"
+            />
+          </div>
+
+          <!-- end of blog photo -->
+          <!-- end of blog photo -->
+          <!-- blog info -->
+          <div class="blog__info">
+            <h1 class="blog__info-title section-subtitle">
+              Personal Training Sessions
+            </h1>
+            <div class="blog__info-underline"></div>
+            <p class="blog__info-text">
+              $70 hour $40 1/2 hour Ask about weekly packages. Available now
+              with discounted prices on hours per week.
+            </p>
+            <h1 class="blog__info-title section-subtitle">
+              Group Training Class
+            </h1>
+            <div class="blog__info-underline"></div>
+            <p class="blog__info-text">
+              rates are available for strength and conditioning , cardio weight
+              loss, and HIIT classes with 3 or more attendants per class.
+            </p>
+          </div>
+          <!-- end of blog info -->
+          <!-- blog info -->
+          <div class="blog__info"></div>
+          <!-- end of blog info -->
+        </article>
+        <!-- end of blog -->
+      </div>
+    </section>
+    <!-- end of blog -->
+
+    <!-- quote section -->
+    <section class="quotes section-padding" id="quotes">
+      <!-- section title -->
+      <!-- icon -->
+      <div class="section-title__container">
+        <div class="section-title__icon"></div>
+        <!-- end of icon -->
+        <!-- title text -->
+        <div class="section-title__text">
+          <h1 class="section-title__name">
+            client testimonials
+          </h1>
+          <!-- <h4 class="section-title__info">
+            about me
+          </h4> -->
+        </div>
+        <!-- end of title text -->
+      </div>
+      <!-- end of section title -->
+
+      <!-- quotes -->
+      <div class="flexbox-parent flexbox-parent--medium owl-carousel owl-theme">
+        <!-- single quote -->
+        <article class="quote">
+          <blockquote class="quote__text">
+            <p class="quote__value">
+              <i class="fas fa-quote-left quote__icon"></i>
+              Thank you Marcie for bringing my confidence back! Marcie is a
+              great coach for women and is a supportive trainer. She made me
+              feel like “I could do it!” and offered help in every way-
+              exercise, nutrition planning, meal-prepping. I’ve had a lot of
+              personal trainers over the last 8 years who have helped me toward
+              my fitness goals and Marcie is one of the best! If you’re looking
+              for someone who is positive and encouraging with a “no guilt”
+              approach...Marcie’s the one for you!
+              <i class="fas fa-quote-right quote__icon"></i>
+            </p>
+            <footer>
+              <p class="quote__name">--Raquel</p>
+              <p class="quote__job">Therapist</p>
+            </footer>
+          </blockquote>
+          <article class="quote__img quote__img-0"></article>
+        </article>
+        <!-- end of single quote -->
+
+        <!-- single quote -->
+        <article class="quote">
+          <blockquote class="quote__text">
+            <p class="quote__value">
+              <i class="fas fa-quote-left quote__icon"></i>
+              Marcie possesses the knowledge, skill and abilities to design an
+              effective fitness program to reach my goals. I’ve been working out
+              with her the past 5 months and I can’t be happier! I have been
+              able to see the results after losing 15 pounds. I feel more
+              energetic and confident. Thank You.
+              <i class="fas fa-quote-right quote__icon"></i>
+            </p>
+            <footer>
+              <p class="quote__name">--Monica Rodriguez</p>
+              <p class="quote__job">business owner</p>
+            </footer>
+          </blockquote>
+          <article class="quote__img quote__img-1"></article>
+        </article>
+        <!-- end of single quote -->
+
+        <!-- single quote -->
+        <article class="quote quote--reverse">
+          <blockquote class="quote__text">
+            <p class="quote__value">
+              <i class="fas fa-quote-left quote__icon"></i>
+              Marcie Shields is an amazing posing coach. She's very kind, and I
+              admire her work as a posing coach. I'm a first time vintage
+              swimwear competitor, and won first place with her help and always
+              looked forward to her classes when it came the time for them. I
+              love her way of teaching because she gets to what you specifically
+              need help with yourself, and I 100% would recommend her to
+              anybody!
+              <i class="fas fa-quote-right quote__icon"></i>
+            </p>
+            <footer>
+              <p class="quote__name">--Melanie</p>
+              <p class="quote__job">youth athlete</p>
+            </footer>
+          </blockquote>
+          <article class="quote__img quote__img-2"></article>
+        </article>
+        <!-- end of single quote -->
+
+        <!-- single quote -->
+        <article class="quote">
+          <blockquote class="quote__text">
+            <p class="quote__value">
+              <i class="fas fa-quote-left quote__icon"></i>
+              I had quit smoking 3 years ago and gained 25 lbs. No matter how
+              hard I worked out I couldn’t get in shape. I called marcie to help
+              me with a plan and personal training sessions. I have lost 11 lbs
+              so far while building muscle at the same time. I owe Marcie big
+              time, she is a motivator and pushes me where I want to be.
+              <i class="fas fa-quote-right quote__icon"></i>
+            </p>
+            <footer>
+              <p class="quote__name">--Rick Innocenti</p>
+              <p class="quote__job">designer</p>
+            </footer>
+          </blockquote>
+          <article class="quote__img quote__img-3"></article>
+        </article>
+        <!-- end of single quote -->
+      </div>
+    </section>
+    <!-- end of quote section -->
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+      <div class="section-center clearfix">
+        <!-- contact info -->
+        <article class="contact-info">
+          <!-- contact item -->
+          <div class="contact-item">
+            <h3 class="contact-title">
+              <span class="contact-icon"
+                ><i class="fas fa-location-arrow"></i
+              ></span>
+              address
+            </h3>
+            <h3 class="contact-text">
+              Palm Springs Ca, 92262
+            </h3>
+          </div>
+          <!--end of  contact item -->
+          <!-- contact item -->
+          <div class="contact-item">
+            <h3 class="contact-title">
+              <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+              email
+            </h3>
+            <h3 class="contact-text">
+              <a
+                href="mailto:marcieshields@rocketmail.com"
+                target="_top"
+                class="contact-email"
+                >marcieshields@rocketmail.com</a
+              >
+            </h3>
+          </div>
+          <!--end of  contact item -->
+          <!-- contact item -->
+          <div class="contact-item">
+            <h3 class="contact-title">
+              <span class="contact-icon"><i class="fas fa-phone"></i></span>
+              phone
+            </h3>
+            <h3 class="contact-text">
+              <a href="tel:7607994701" class="contact-email">(760) 799-4701</a>
+            </h3>
+          </div>
+          <!--end of  contact item -->
+        </article>
+        <!-- contact form -->
+        <article class="contact-form" id="contact">
+          <form
+            action="https://formspree.io/marcieshields@rocketmail.com"
+            method="POST"
+            class="form-group"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder=" name"
+              class="form-control"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder=" email"
+              class="form-control"
+            />
+            <textarea
+              name="message"
+              rows="5"
+              class="form-control"
+              placeholder=" message"
+            ></textarea>
+            <button type="submit" class="main-btn">send</button>
+          </form>
+        </article>
+      </div>
     </section>
 
-    <!-- Section: About -->
-    <section id="about" class="section section-about center grey lighten-3 scrollspy">
-       <div class="container">
-          <h2>About Me</h2>
-          <div class="flow-text">
-            <div class="row">
-              <div class="col s12 l2 m6">
-                <img src="img/marcie.jpg" alt="" class=" responsive-img circle">
-              </div>
-              <div class="col s12 l10  m6 right-align">
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam et ab, tempore dignissimos enim alias asperiores incidunt in sed reprehenderit.</p>
-                  <a href="#about-modal" class="btn waves-effect waves-light grey darken-3 modal-trigger">Learn More</a>
-              </div>
-            </div>
-          </div>
-       </div>
+    <footer class="footer">
+      <div class="section-center">
+        <div class="social-icons">
+          <!-- social icon -->
+          <a
+            href="https://m.facebook.com/Marcie-Shields-633999563614691/?ref=bookmarks"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a
+            href="https://mobile.twitter.com/MarcieShields"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <!-- end of social icon -->
+          <!-- social icon -->
+          <a
+            href="https://www.instagram.com/shieldsmarcie/"
+            class="social-icon"
+            target="_blank"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <!-- end of social icon -->
+        </div>
+        <p class="footer-text">
+          &copy; <span class="text-primary">marcies shields</span>. all rights
+          reserved
+        </p>
       </div>
-    </div>
-    </section>
+    </footer>
 
-    <!-- Section: Services -->
-    <section class="section section-services grey lighten-1 scrollspy" id="services">
-        <div class="container">
-          <div class="row">
-            <h2 class="center">Services</h4>
-              <div class="col s12 m4">
-                  <div class="card">
-                      <div class="card-image">
-                        <img src="img/workout4.jpg" alt="" />
-                        <span class="card-title">Workout</span>
-                        <a
-                          href="#workout-modal"
-                          class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"
-                        >
-                          <i class="material-icons">add</i>
-                        </a>
-                      </div>
-                      <div class="card-content">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium non repellat repudiandae quia sapiente numquam fugiat jfjis jion voluptatum.
-                        </p>
-                      </div>
-                    </div>
-              </div>
-              <div class="col s12 m4">
-                  <div class="card">
-                      <div class="card-image">
-                        <img src="img/nutrition3.jpg" alt="" />
-                        <span class="card-title">Nutrition</span>
-                        <a
-                          href="#nutrition-modal"
-                          class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"
-                        >
-                          <i class="material-icons">add</i>
-                        </a>
-                      </div>
-                      <div class="card-content">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium non repellat repudiandae quia sapiente dolorem consequuntur numquam fugiat voluptatum.
-                        </p>
-                      </div>
-                    </div>
-              </div>
-              <div class="col s12 m4">
-                  <div class="card">
-                      <div class="card-image">
-                        <img src="img/yoga1.jpg" alt="" />
-                        <span class="card-title">Yoga</span>
-                        <a
-                          href="#yoga-modal"
-                          class="btn-floating halfway-fab waves-effect waves-light red modal-trigger"
-                        >
-                          <i class="material-icons">add</i>
-                        </a>
-                      </div>
-                      <div class="card-content">
-                        <p>
-                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error praesentium non repellat repudiandae quia sapiente dolorem consequuntur numquam fugiat voluptatum.
-                        </p>
-                      </div>
-                    </div>
-              </div>
-          </div>
-        </div>
-      </section>
-
-       <!-- Section: Gallery -->
-       <section class="section section-gallery scrollspy grey lighten-3" id="gallery">
-          <div class="container">
-            <h4 class="center">Photo Gallery</h4>
-            <div class="row">
-              <div class="col s12 m3">
-                <img src="img/marcie9.jpg" alt="" class="materialboxed responsive-img">
-              </div>
-              <div class="col s12 m3">
-                  <img src="img/marcie10.jpg" alt="" class="materialboxed responsive-img">
-                </div>
-                <div class="col s12 m3">
-                    <img src="img/marcie11.jpg" alt="" class="materialboxed responsive-img">
-                  </div>
-                  <div class="col s12 m3">
-                      <img src="img/marcie4.jpg" alt="" class="materialboxed responsive-img">
-                    </div>
-            </div>
-            <div class="row">
-                <div class="col s12 m3">
-                  <img src="img/marcie5.jpg" alt="" class="materialboxed responsive-img">
-                </div>
-                <div class="col s12 m3">
-                    <img src="img/marcie12.jpg" alt="" class="materialboxed responsive-img">
-                  </div>
-                  <div class="col s12 m3">
-                      <img src="img/marcie7.jpg" alt="" class="materialboxed responsive-img">
-                    </div>
-                    <div class="col s12 m3">
-                        <img src="img/marcie8.jpg" alt="" class="materialboxed responsive-img">
-                      </div>
-              </div>
-          </div>
-        </section>
-
-       
-
-      <!-- Section: Testimonial -->
-    <section class="section section-testimonial grey lighten-1">
-        <div class="container">
-          <div class="row">
-            <div class="col s12">
-              <div class="carousel carousel-slider center">
-                <div class="carousel-item" href="#one">
-                  <h2>Testimonial 1</h2>
-                  <p class="flow-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                    adipisci fuga neque doloribus doloremque? Suscipit
-                    reprehenderit natus doloribus maiores itaque explicabo
-                    temporibus ab vitae placeat, saepe dolor sit, enim sunt?
-                  </p>
-                  <p><em>- Monica Rodriguez From Cathedral Insurace</em></p>
-                </div>
-                <div class="carousel-item" href="#two">
-                  <h2>Testimonial 2</h2>
-                  <p class="flow-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                    adipisci fuga neque doloribus doloremque? Suscipit
-                    reprehenderit natus doloribus maiores itaque explicabo
-                    temporibus ab vitae placeat, saepe dolor sit, enim sunt?
-                  </p>
-                  <p><em>- Emilio Ramos From Spectrum</em></p>
-                </div>
-                <div class="carousel-item" href="#three">
-                  <h2>Testimonial 3</h2>
-                  <p class="flow-text">
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel
-                    adipisci fuga neque doloribus doloremque? Suscipit
-                    reprehenderit natus doloribus maiores itaque explicabo
-                    temporibus ab vitae placeat, saepe dolor sit, enim sunt?
-                  </p>
-                  <p><em>- Jane Smith From Twitter</em></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-       <!-- Footer -->
-
-        <footer class="page-footer">
-            <div class="footer-copyright">
-              <div class="container white-text">
-              Marcie Shields © <span id="year"></span> Copyright 
-              <a class="white-text text-lighten-4 right" href="#!">elDenis-Media</a>
-              </div>
-            </div>
-          </footer>
-
-          <!-- Add Contact Model -->
-          <div id="contact-modal" class="modal">
-            <div class="modal-content">
-                <div class="container">
-                    <div class="row">
-                      <div class="col s12">
-                        <div class="card-panel z-depth-5">
-                          <h4>Contact Me</h4>
-                          <div class="input-field">
-                            <input type="text" id="name"  />
-                            <label for="name">Name</label>
-                          </div>
-                          <div class="input-field">
-                            <input type="email" id="email"  />
-                            <label for="email">Email</label>
-                          </div>
-                          <div class="input-field">
-                            <input type="text" id="phone"  />
-                            <label for="phone">Phone</label>
-                          </div>
-                          <label for="message">Message</label>
-                          <div class="input-field">
-                            <textarea
-                              name="materialize-textarea"
-                              id="body"
-                            ></textarea>
-                          </div>
-                          <br>
-                          <input type="submit" value="Submit" class="btn red" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-          </div>
-
-        <!-- Workout Modal  -->
-    <div id="workout-modal" class="modal">
-        <div class="modal-content">
-          <h4>Workout</h4>
-          <img src="img/workout4.jpg" alt="" class="responsive-img" />
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptatem eos, repudiandae neque mollitia delectus libero ducimus? Ratione veniam corrupti debitis cumque ullam, quia, unde, sapiente laboriosam deserunt minima fugit minus. Eum fuga optio iste, cupiditate error possimus et dolor provident. Officiis impedit consequatur commodi et libero. Numquam, distinctio reprehenderit!
-        </div>
-      </div>
-  
-      <!--  Nutrition Modal  -->
-      <div id="nutrition-modal" class="modal">
-        <div class="modal-content">
-          <h4>Nutrition</h4>
-          <img src="img/nutrition3.jpg" alt="" class="responsive-img" />
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nesciunt tenetur est, blanditiis at quibusdam laudantium totam consectetur quos odio officiis fuga, earum placeat omnis dolorem, ratione rerum voluptatem! Itaque debitis nulla minus cumque accusantium, tenetur quae at earum praesentium corrupti explicabo ad, neque reiciendis, quis esse nobis in libero.
-        </div>
-      </div>
-  
-       <!--  Yoga Modal  -->
-       <div id="yoga-modal" class="modal">
-          <div class="modal-content">
-            <h4>Yoga</h4>
-            <img src="img/yoga1.jpg" alt="" class="responsive-img" />
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error nesciunt tenetur est, blanditiis at quibusdam laudantium totam consectetur quos odio officiis fuga, earum placeat omnis dolorem, ratione rerum voluptatem! Itaque debitis nulla minus cumque accusantium, tenetur quae at earum praesentium corrupti explicabo ad, neque reiciendis, quis esse nobis in libero.
-          </div>
-        </div>
-
-         <!--  About Modal  -->
-       <div id="about-modal" class="modal">
-          <div class="modal-content">
-            <h4>About Me</h4>
-            <div class="card">
-              <div class="card-content">
-               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam iste dolores consectetur aliquam recusandae eius nobis voluptatem libero perspiciatis, impedit nam earum architecto quibusdam suscipit ut mollitia debitis officia. Velit omnis fugiat magnam error ducimus possimus minus accusantium quidem illo. Fugit, adipisci nulla. Ipsum, animi. Dolore aspernatur dolorum vel repudiandae.</p>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-    <!-- Import jQuery before materialize.js -->
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-    ></script>
-    <script src="https://cdn.ckeditor.com/4.11.1/standard/ckeditor.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script>
-      $(document).ready(function() {
-        // Custom JS & jQuery here
-
-        // Init Side Nav
-        $('.button-collapse').sideNav();
-
-        // Init Slider
-        $('.slider').slider({
-          indicators: false,
-          height: 500,
-          transition: 500,
-          interval: 5000
-        })
-        
-        // Init Scrollspy
-        $('.scrollspy').scrollSpy();
-
-        // Init Carrosel
-        $('.carousel.carousel-slider').carousel({
-          fullWidth: true,
-          indicators: true
-        })
-
-        // Init Modal
-        $('.modal').modal();
-
-        // Init CkEditor
-        CKEDITOR.replace('body');
-
-
-      });
-    </script>
+    <!-- scripts -->
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- magnific -->
+    <script src="plugins/magnific/jquery.magnific-popup.min.js"></script>
+    <!-- magnific script -->
+    <!-- <script src="plugins/magnific/magnific.js"></script> -->
+    <!-- numscroller -->
+    <script src="plugins/numscroller-1.0.js"></script>
+    <!-- owl carousel -->
+    <script src="plugins/owl/owl.carousel.min.js"></script>
+    <!-- owl js -->
+    <!-- <script src="plugins/owl/owl.js"></script> -->
+    <!-- app js  -->
+    <script src="js/app.js"></script>
+    <!--  -->
   </body>
 </html>
