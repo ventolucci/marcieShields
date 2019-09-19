@@ -86,7 +86,7 @@ a {
   z-index: 1;
   top: 0;
   left: 0;
-  color: black;
+  color: var(--primaryColor);
   margin: 1rem 1.3rem;
   font-size: 2rem;
   animation: bounce 2s ease-in-out infinite;
@@ -258,9 +258,9 @@ a {
 
 /* header */
 .header {
-  min-height: 85vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../img/test.jpg') center/cover no-repeat fixed;
+    url('../img/final.1.jpg') center/cover no-repeat fixed;
   position: relative;
 }
 
@@ -311,7 +311,7 @@ a {
   opacity: 0.7;
 }
 .social-icon {
-  padding: 1.2rem 1.5rem;
+  /* padding: 1.2rem 1.5rem; */
   /* animation */
   animation: show 5s ease-in-out 1;
 }
