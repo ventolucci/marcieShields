@@ -259,9 +259,13 @@ a {
 /* header */
 .header {
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../img/landing.jpg') center/cover no-repeat fixed;
-  position: relative;
+  background: url('../img/final.1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 /* banner */
