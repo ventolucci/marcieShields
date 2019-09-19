@@ -258,10 +258,9 @@ a {
 
 /* header */
 .header {
-  min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../img/final.1.jpg') center/cover no-repeat fixed;
-  position: relative;
+  min-height: 85vh;
+  background: url('../img/final.1.jpg');
+  background-size: auto 749px;
 }
 
 /* banner */
